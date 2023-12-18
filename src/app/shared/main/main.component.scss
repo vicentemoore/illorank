@@ -92,3 +92,10 @@ footer {
         z-index: 3;
     }
 }
+
+@media screen and (max-width: 500px) {
+    section {
+        margin: 0px;
+        margin-top: 30px;
+    }
+}
