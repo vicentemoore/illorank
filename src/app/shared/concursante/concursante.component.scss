@@ -117,3 +117,11 @@ p {
     margin-bottom: 70px;
     transform: rotate(-15deg);
 }
+
+
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 350px;
+    }
+}
