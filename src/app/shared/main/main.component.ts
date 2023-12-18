@@ -10,7 +10,7 @@ export class MainComponent {
   title1: string = "iLlo";
   title2: string = "RaNk";
 
-  imgRoute: string = "../../../assets/img/";
+  imgRoute: string = "https://github.com/vicentemoore/illorank/blob/main/src/assets/img/";
 
   concursantes = [
     { imagen: `${this.imgRoute}/guille.png`, titulo: 'GuiLle', spanText: '', comodines: "", link: "https://www.youtube.com/watch?v=7GG7j_w0uE8", winner: true, cagao: false, large: false, joan: false},
