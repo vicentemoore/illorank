@@ -16,6 +16,7 @@ export class ConcursanteComponent {
   @Input() large: boolean = false;
   @Input() cagao: boolean = false;
   @Input() joan: boolean = false;
+  @Input() juan: boolean = false;
 
     get enlace(): string {
       return this.link;

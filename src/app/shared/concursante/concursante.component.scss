@@ -118,6 +118,16 @@ p {
     transform: rotate(-15deg);
 }
 
+.juan {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin-bottom:50px;
+    transform: rotate(15deg);
+    margin-left: 70px;
+}
+
 
 
 @media screen and (max-width: 500px) {
