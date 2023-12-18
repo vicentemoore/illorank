@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'gtaFont';
+    src: url("../../../assets/fonts/grand-theft-auto_pricedow.ttf");
+}
+
+main {
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    a img {
+        height: 28px;
+        width: auto;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+}
+
+body {
+    width: 400px;
+    height: 55px;
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #10066b, #4a17c6, #912fb5, #b44ada, #ed7dbe );
+    border-radius: 0 30px 0 15px;
+    border: 2px solid rgb(48, 189, 172);
+    box-shadow: 8px 8px 15px black;
+    transition: border-width 0.3s;
+    .concursante {
+        z-index: 1;
+        height: 80px;
+        bottom: 14px;
+        margin-left: px;
+        position: relative;
+    }
+    &:hover {
+        cursor: pointer;
+        border: 4px solid rgb(53, 241, 166);
+        h5 {
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(to top, #c390e5, #d9ebb7 21.81%, #90ebe7 31.42%, #e8e0b5 41.38%, #a3abec 51.68%, #c493e7 61.29%, #edc9c1 70.21%, #83c7ff 78.45%, #c895ea);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 200% auto;
+        }
+    }
+}
+
+h5 {
+    z-index: 2;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family: "gtaFont";
+    -webkit-text-stroke: 0.1px #000;
+}
+
+.large-name {
+    font-size: 34px;
+    width: 100px;
+    text-align: center;
+}
+
+.mission {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    transform: rotate(-10deg);
+}
+
+span {
+    color: #000;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "gtaFont";
+    -webkit-text-stroke: 0.1px #fff;
+}
+
+p {
+    font-size: 15px;
+}
+
+.winner-style {
+    background: linear-gradient(to right, rgb(221, 193, 109), rgb(114, 98, 18)) !important;
+    border: 2px solid rgb(0, 0, 0);
+    transition: border-width 0.2s;
+    &:hover {
+        cursor: pointer;
+        border: 4px solid rgb(0, 0, 0);
+    }
+}
+
+.cagao {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+
+.nowaying {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+    margin-left: 20px;
+}
+
+.guarroman {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 70px;
+    transform: rotate(-15deg);
+}

@@ -1,0 +1,14 @@
+<main>
+    <body [ngClass]="{ 'winner-style': winner, 'cagao-style': cagao }" (click)="onBodyClick()">
+        <h5 [ngClass]="{ 'large-name': large }">{{ titulo }}</h5>
+        <div>
+            <span>{{ spanText }}</span>
+            <p>{{ comodines }}</p>
+            <img *ngIf="winner" src="../../../assets/img/mission.png" class="mission">
+        </div>
+        <img *ngIf="cagao" src="../../../assets/img/cagao.png" class="cagao">
+        <img *ngIf="winner" src="../../../assets/img/nowaying.png" class="nowaying">
+        <img *ngIf="joan" src="../../../assets/img/guarroman.png" class="guarroman">
+        <img [src]="imagen" class="concursante">
+    </body>
+</main>

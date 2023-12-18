@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'gtaFont';
+    src: url("../../../assets/fonts/grand-theft-auto_pricedow.ttf");
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-size: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/466272.jpg");
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(to top, #10066b, #4a17c6, #912fb5, #b44ada, #ed7dbe );
+    div { display: flex; }
+    img {
+        height: auto;
+        width: 30px;
+        transition: width 0.4s;
+        &:hover {
+            width: 35px;
+            transition: width 0.4s;
+        }
+    }
+    h1 {
+        font-size: 65px;
+        font-family: "gtaFont";
+        -webkit-text-stroke: 0.5px #000;
+    }
+    h2 {
+        font-size: 65px;
+        font-family: "gtaFont";
+        -webkit-text-stroke: 0.5px #000;
+        background: linear-gradient(to right, rgb(221, 193, 109), rgb(143, 124, 26));
+        background-size: 200% 100%;
+        color: transparent;
+        background-clip: text;
+        animation: moveGradient 2s infinite linear;
+        display: inline-block;
+        
+    }
+    @keyframes moveGradient {
+        0% {
+            background-position: 100% 0%;
+        }
+        100% {
+            background-position: -100% 0%;
+        }
+    }
+}
+
+section {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer {
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    p { 
+        color: black; 
+        font-size: 20px; 
+        margin-left: 4px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+}

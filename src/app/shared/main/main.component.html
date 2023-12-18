@@ -1,0 +1,27 @@
+<body>
+    
+    <header>
+        <a href="https://www.twitch.tv/illojuan" target="_blank"><img src="../../../assets/img/twitch.png"></a>
+        <div>
+            <h1>{{this.title1}}</h1>
+            <h2>{{this.title2}}</h2>
+        </div>
+        <a href="https://www.youtube.com/@IlloJuan_" target="_blank"><img src="../../../assets/img/youtube.png"></a>
+    </header>
+
+    <section>
+        <app-concursante *ngFor="let concursante of concursantes"
+            [imagen]="concursante.imagen"
+            [titulo]="concursante.titulo"
+            [spanText]="concursante.spanText"
+            [comodines]="concursante.comodines"
+            [link]="concursante.link"
+            [winner]="concursante.winner"
+            [large]="concursante.large"
+            [joan]="concursante.joan"
+            [cagao]="concursante.cagao">
+        </app-concursante>
+    </section>
+
+    <footer> <p>by: @vicenteheist</p> <img src="https://cdn.7tv.app/emote/60aea35ff39a7552b6eece27/1x.webp"> </footer>
+</body>
